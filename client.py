@@ -31,6 +31,6 @@ def log(text):
 os.system("")
 
 with socket.socket() as sock:
-    sock.connect(IP, PORT)
+    sock.connect((IP, PORT))
     while True:
         log(sock.recv(4096).decode())
