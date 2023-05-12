@@ -20,12 +20,11 @@ def t_monitor():
         if diff == '':
             os.system('cls')
         else:
-            log(diff)
+            buffer.append(diff)
         content = newContent
-        buffer.append(content)
 
 def init():
-    Thread(t_monitor).start()
+    Thread(target=t_monitor).start()
 
 def get_msg():
     if len(buffer) == 0:
