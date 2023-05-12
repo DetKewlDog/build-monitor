@@ -1,5 +1,6 @@
 import socket
 from config import *
+import os
 
 ERROR = '\033[91m'
 PRINT = '\033[97m'
